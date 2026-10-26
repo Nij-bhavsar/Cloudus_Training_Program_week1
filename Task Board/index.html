@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Task board</title>
+</head>
+<body>
+    <h2>This is a simple Task Board App</h2>
+    <form>
+        <label for="taskname">Task Name:</label><br>
+        <input type="text" name="tname"><br>
+        <label for="priority">Priority:</label><br>
+        <select name="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select><br>
+        <button type="submit">Add</button>
+        <button type="reset">Reset</button>
+    </form>
+<ol>
+    <li>
+        <input type="checkbox">
+        <span>Install Node js.</span>
+        <span class="high">~ <em>High</em></span>
+        <button type="reset">Delete</button>
+    </li>
+    <li>
+        <input type="checkbox">
+        <span>Learn HTML</span>
+        <span class="med">~ <em>Medium</em></span>
+        <button type="reset">Delete</button>
+    </li>
+    <li>
+        <input type="checkbox">
+        <span>Learn CSS</span>
+        <span class="med">~ <em>Medium</em></span>
+        <button type="reset">Delete</button>
+    </li>
+    <li>
+        <input type="checkbox">
+        <span>Learn Tailwind Basics</span>
+        <span class="low">~ <em>Low</em></span>
+        <button type="reset">Delete</button>
+    </li>
+    <li>
+        <input type="checkbox">
+        <span>Learn Javascript</span>
+        <span class="med">~ <em>Medium</em></span>
+        <button type="reset">Delete</button>
+    </li>
+</ol>
+<footer>
+    <ul>
+        <li>Total Tasks = 5</li>
+        <li>Done = 2</li>
+        <li>High Priority = 1</li>
+    </ul>
+</footer>
+</body>
+</html>
