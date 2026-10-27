@@ -1,0 +1,68 @@
+* {
+    background-color:  rgb(182, 202, 195);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hero, #title {
+    color: firebrick;
+    font-size: 30px;
+    padding-top: 0%;
+    text-align: center;
+}
+#line{
+    color: chocolate;
+    text-align: center;
+
+}
+#label {
+    padding-bottom: 10px;
+}
+
+#taskform {
+    color: rgb(35, 76, 83);
+    font-size: 15px;
+}
+.container{
+    text-align: center;
+}
+input:focus{
+    background-color: rgb(186, 161, 161);
+}
+
+#textarea {
+    border-color: black;
+}
+
+.btn:hover{
+    background-color: rgb(131, 222, 222);
+}
+.btn, #sub {
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
+
+#del {
+    color: rgb(155, 25, 25);
+    border-color: black;
+}
+
+.lists {
+    padding-top: 10px;
+    padding-left: 630px;
+}
+
+.high {
+    color: crimson;
+}
+
+.med{
+    color: rgb(209, 145, 67);
+}
+
+.low{
+    color: khaki;
+}
+
+.statusbar{
+    color: darkorchid;
+    padding-left: 650px;
+}
