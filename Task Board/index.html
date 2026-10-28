@@ -11,16 +11,32 @@
 <div>
     <h2 class="hero" id="title">TASK BOARD </h2>
     <p id="line">Stay organized, get things done</p>
-</div>   
+</div>
+<div id="guide">
+    <p>Task Summary</p>
+</div>
+<div class="statusbar">
+    <div class="status-data">
+        <p>Total Tasks</p>
+        <span>5</span>
+    </div>
+    <div class="status-data">
+        <p>Completed</p>
+        <span>2</span>
+    </div>
+    <div class="status-data">
+        <p>High Priority</p>
+        <span>1</span>
+    </div>
+</div>
 <div>
     <p id="guide">Add a New Task</p>
-    <p id="line2">Enter a task and select its priority</p>
 </div>
 <form class="formtext">
-    <label for="task">Task Name:</label><br>
-    <input type="text" name="tname"><br>
-    <label for="priority" >Priority:</label><br>
-    <select name="priority" id="priority">
+    <label for="task">Task Name</label>
+    <input type="text" name="tname" placeholder="Enter a task">
+    <label for="priority" >Priority:</label>
+    <select name="priority">
         <option>Low</option>
         <option>Medium</option>
         <option>High</option>
@@ -32,9 +48,15 @@
     </div>
 </form>
 
-<div id="guide">
-    <p>This is the list of tasks, mark if your task is completed!</p>
+<div>
+    <p id="guide">Task Lists</p>
+    <p id="line2">This is the list of tasks, mark if your task is completed!</p>
 </div>
+
+<div id="line2">
+    
+</div>
+<div class="table-wrap">
 <table class="tabledata">
     <tr>
         <th>No.</th>
@@ -79,22 +101,6 @@
         <td><button type="reset">Delete</button></td>
     </tr>
 </table>
-<div id="guide">
-    <p>Task Summary</p>
-</div>
-<div class="statusbar">
-    <div class="status-data">
-        <p>Total Tasks</p>
-        <span>5</span>
-    </div>
-    <div class="status-data">
-        <p>Completed</p>
-        <span>2</span>
-    </div>
-    <div class="status-data">
-        <p>High Priority</p>
-        <span>1</span>
-    </div>
 </div>
 </div>
 </body>

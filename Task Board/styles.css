@@ -1,10 +1,12 @@
-* {
+body {
     background-color: #EAF1ED;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 10px 10px;
 }
 
 .whole {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     margin: 20px auto;
 }
@@ -14,13 +16,15 @@
     background-color: #47796F;
     color: white;
     font-size: 30px;
-    margin-bottom: 0%;
-    width: 600px;
+    margin-bottom: 0;
+    width: 100%;
     text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #line{
-    margin-top: 0%;
+    margin-top: 0;
     color: #a79741;
     font-size: 16px;
     text-align: center;    
@@ -28,31 +32,33 @@
 
 #guide{
     font-size: 20px;
-    margin-bottom: 0%;
+    margin-bottom: 0;
     font-weight: bold;
-    flex: 1;
+    margin-top: 30px;
 }
 
 #line2{
-    margin-top: 0%;
+    margin-top: 0;
     color: rgb(121, 123, 126);
     font-size: 15px;
 }
 
 .formtext {
-    width: 300px;
+    width: 100%;
+    max-width: 600px;
     font-size: 15px;
     border-radius: 10px;
 }
 
 .formtext label {
     display: block;
-    margin-bottom: 0px;
-    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-top: 14px;
 }
 .formtext input, .formtext select {
-    width: 200%;
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #bac1bd;
     border-radius: 10px;
@@ -63,6 +69,7 @@
 
 .btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -83,17 +90,25 @@
     opacity: 0.8;
 }
 
-input:focus{
-    background-color: rgb(213, 204, 204);
+.tablewrap {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 5px;
 }
 
-table, th, td {
-    margin-top: 5px;
-    width: 600px;
-    text-align: center;
+.tabledata {
     border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    min-width: 100%;
+}
+
+th, td {
+    
+    padding: 8px;
+    border: 1px solid #bac1bd;
     border-radius: 5px;
-    flex: 1;
 }
 
 #check {
@@ -103,12 +118,14 @@ table, th, td {
     cursor: pointer;
 }
 
-.tabledata button{
-    padding: 3px 8px;
+.tabledata button {
+    padding: 5px 8px;
+    border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     background-color: #c94c4c;
+    white-space: nowrap;
 }
 
 .tabledata button:hover {
@@ -117,17 +134,20 @@ table, th, td {
 
 .statusbar {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     cursor: pointer;
+    width: 100%;
 }
 
 .status-data {
-    flex: 1;
+    flex: 1 1 150px;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid #afb8b5;
-    min-width: 0;
+    border: 1px solid #bac1bd;
 }
 
 .status-data p {
@@ -140,5 +160,53 @@ table, th, td {
     font-size: 25px;
     font-weight: bold;
     color: #284b43;
-    text-align: center;
-} 
+}
+
+@media (max-width: 600px) {
+    .whole {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #title {
+        font-size: 24px;
+        width: auto;
+    }
+
+    #guide {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #line {
+        font-size: 14px;
+    }
+
+    #line2 {
+        font-size: 14px;
+    }
+    .formtext {
+        max-width: auto;
+    }
+    .tabledata th, .tabledata td {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .statusbar {
+        flex-direction: column;
+    }
+    .status-data {
+        width: 100%;
+        flex: auto;
+        padding-right: auto;
+    }
+
+    .tablewrap {
+        overflow-x: auto;
+    }
+
+    .btns button {
+        font-size: 14px;
+    }
+}
