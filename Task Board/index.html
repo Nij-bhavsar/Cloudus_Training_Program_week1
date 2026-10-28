@@ -7,71 +7,95 @@
     <title>Task Board</title>
 </head>
 <body>
-    <div class="container">
-    <h2 class="hero" id="title">TASK BOARD</h2>
-    <p id="line">This is a simple Task Board app.<br> It is uses to add task with its marking</p>
-    <form class="formtext">
-        <label for="taskname" class="formtext" id="label">Task Name:</label><br>
-        <input type="text" name="tname" id="textarea"><br>
-        <label for="priority" id="label">Priority:</label><br>
-        <select name="priority" class="formtext" id="prior">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select><br>
-        <div class="btns">
-        <button type="submit" class="btn" id="sub">Add</button>
-        <button type="reset" class="btn" id="del">Reset</button>
-        </div>
-    </form>
-    </div>
-<div class="lists">
-    
-    <div>
-        <input type="checkbox">
-        <span>Install Node js.</span>
-        <span class="high">~ <em>High</em></span>
-        <button type="reset" class="btn"  id="del">Delete</button>
-    </div>
-    <div>
-        <input type="checkbox">
-        <span>Learn HTML</span>
-        <span class="med">~ <em>Medium</em></span>
-        <button type="reset" class="btn" id="del">Delete</button>
-    </div>
-    <div>
-        <input type="checkbox">
-        <span>Learn CSS</span>
-        <span class="med">~ <em>Medium</em></span>
-        <button type="reset" class="btn" id="del">Delete</button>
-    </div>
-    <div>
-        <input type="checkbox">
-        <span>Learn Tailwind Basics</span>
-        <span class="low">~ <em>Low</em></span>
-        <button type="reset" class="btn" id="del">Delete</button>
-    </div>
-    <div>
-        <input type="checkbox">
-        <span>Learn Javascript</span>
-        <span class="med">~ <em>Medium</em></span>
-        <button type="reset" class="btn" id="del">Delete</button>
-    </div>
-</div> 
+<div class="whole">
+<div>
+    <h2 class="hero" id="title">TASK BOARD </h2>
+    <p id="line">Stay organized, get things done</p>
+</div>   
+<div>
+    <p id="guide">Add a New Task</p>
+    <p id="line2">Enter a task and select its priority</p>
+</div>
+<form class="formtext">
+    <label for="task">Task Name:</label><br>
+    <input type="text" name="tname"><br>
+    <label for="priority" >Priority:</label><br>
+    <select name="priority" id="priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select>
 
+    <div class="btns">
+        <button type="submit" class="btn">Add</button>
+        <button type="reset" class="rst-btn">Reset</button>
+    </div>
+</form>
+
+<div id="guide">
+    <p>This is the list of tasks, mark if your task is completed!</p>
+</div>
+<table class="tabledata">
+    <tr>
+        <th>No.</th>
+        <th>Mark</th>
+        <th>Task Name</th>
+        <th>Priority</th>
+        <th>Remove</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><input type="checkbox" id="check"></td>
+        <td>Install Node js</td>
+        <td>High</td>
+        <td><button type="reset">Delete</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><input type="checkbox" id="check"></td>
+        <td>Learn HTML</td>
+        <td>Medium</td>
+        <td><button type="reset">Delete</button></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><input type="checkbox" id="check"></td>
+        <td>Learn CSS</td>
+        <td>Medium</td>
+        <td><button type="reset">Delete</button></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><input type="checkbox" id="check"></td>
+        <td>Learn tailwind </td>
+        <td>Low</td>
+        <td><button type="reset">Delete</button></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><input type="checkbox" id="check"></td>
+        <td>Learn Javascript</td>
+        <td>High</td>
+        <td><button type="reset">Delete</button></td>
+    </tr>
+</table>
+<div id="guide">
+    <p>Task Summary</p>
+</div>
 <div class="statusbar">
-    <div class="items">
+    <div class="status-data">
         <p>Total Tasks</p>
         <span>5</span>
     </div>
-    <div class="items">
+    <div class="status-data">
         <p>Completed</p>
         <span>2</span>
     </div>
-    <div class="items">
+    <div class="status-data">
         <p>High Priority</p>
         <span>1</span>
     </div>
+</div>
 </div>
 </body>
 </html>

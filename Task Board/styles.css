@@ -1,68 +1,144 @@
 * {
-    background-color:  rgb(182, 202, 195);
+    background-color: #EAF1ED;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.hero, #title {
-    color: firebrick;
+
+.whole {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#title {
+    border-radius: 15px;
+    background-color: #47796F;
+    color: white;
     font-size: 30px;
-    padding-top: 0%;
+    margin-bottom: 0%;
+    width: 600px;
     text-align: center;
 }
+
 #line{
-    color: chocolate;
-    text-align: center;
+    margin-top: 0%;
+    color: #a79741;
+    font-size: 16px;
+    text-align: center;    
+} 
 
-}
-#label {
-    padding-bottom: 10px;
+#guide{
+    font-size: 20px;
+    margin-bottom: 0%;
+    font-weight: bold;
+    flex: 1;
 }
 
-#taskform {
-    color: rgb(35, 76, 83);
+#line2{
+    margin-top: 0%;
+    color: rgb(121, 123, 126);
     font-size: 15px;
 }
-.container{
-    text-align: center;
+
+.formtext {
+    width: 300px;
+    font-size: 15px;
+    border-radius: 10px;
 }
+
+.formtext label {
+    display: block;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.formtext input, .formtext select {
+    width: 200%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #bac1bd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btns button {
+    padding: 7px 16px;
+    border-radius: 5px;
+    background-color: #47796F;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btns .rst-btn {
+    background-color: #c94c4c;
+}
+
+.btns button:hover {
+    opacity: 0.8;
+}
+
 input:focus{
-    background-color: rgb(186, 161, 161);
+    background-color: rgb(213, 204, 204);
 }
 
-#textarea {
-    border-color: black;
+table, th, td {
+    margin-top: 5px;
+    width: 600px;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 5px;
+    flex: 1;
 }
 
-.btn:hover{
-    background-color: rgb(131, 222, 222);
-}
-.btn, #sub {
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 0, 0);
-}
-
-#del {
-    color: rgb(155, 25, 25);
-    border-color: black;
+#check {
+    width: 18px;
+    height: 18px;
+    accent-color: #47796f;
+    cursor: pointer;
 }
 
-.lists {
-    padding-top: 10px;
-    padding-left: 630px;
+.tabledata button{
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #c94c4c;
 }
 
-.high {
-    color: crimson;
+.tabledata button:hover {
+    opacity: 0.8;
 }
 
-.med{
-    color: rgb(209, 145, 67);
+.statusbar {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
-.low{
-    color: khaki;
+.status-data {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #afb8b5;
+    min-width: 0;
 }
 
-.statusbar{
-    color: darkorchid;
-    padding-left: 650px;
+.status-data p {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: #647a71;
 }
+
+.status-data span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #284b43;
+    text-align: center;
+} 
