@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edunet - Online Learning Platform</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body>
+    <nav class="flex items-center justify-between bg-amber-200 px-6 py-3 text-black p-2.5">
+        <a href="../index.html" class="flex items-center">
+            <img src="../edunet.png" alt="Edunet logo" class="h-12 w-70 object-contain">
+            <!-- <a href="./home.html">Edunet - Online Learning Platform</a> -->
+        </a>
+        <div class="items-center space-x-6">
+            <a href="./home.html">Home</a>
+            <a href="./courselisting.html">Courses</a>
+            <a href="./coursedetail.html">Courses-Detail</a>
+            <a href="./studentform.html">Registration</a>
+        </div>
+            
+        <div class="space-x-2 items-center">
+            <input type="text" placeholder="Search" class="bg-amber-300 px-4 py-2 rounded-2xl">
+            <button type="submit" class="cursor-pointer border border-gray-700 px-4 py-2 rounded-full">Search</button>
+            <button type="button" class="cursor-pointer border border-gray-700 px-4 py-2 rounded-full">Signup</button>
+            <button type="button" class="cursor-pointer border border-gray-700 px-4 py-2 rounded-full">Login</button>
+        </div>
+    </nav>
+    <div class="flex justify-center items-center p-6">
+        <form class="mx-auto grid w-full max-w-3xl grid-cols-1 gap-5 rounded-lg bg-white p-8 shadow-md sm:grid-cols-2">
+            <h2 class="mb-4 text-center text-2xl font-bold">
+                Student Registration
+            </h2>
+
+            <div>
+                <label for="name" class="mb-2 block">Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" class="w-full rounded border p-2">
+            </div>
+
+            <div>
+                <label for="email" class="mb-2 block">Email</label>
+                <input type="text" placeholder="Enter your email-id" class="w-full rounded border p-2">
+            </div>
+            
+            <div>
+                <label for="password" class="mb-2 block">Password</label>
+                <input type="password" placeholder="Enter your password" class="w-full rounded border p-2">
+            </div>
+            
+            <div>
+                <label for="password" class="mb-2 block">Confirm Password</label>
+                <input type="password" placeholder="Enter your existing password" class="w-full rounded border p-2">
+            </div>
+            
+            <div>
+                <label for="education" class="mb-2 block">Education Level</label>
+                <select id="education" class="w-full rounded border p-2">
+                    <option>UG</option>
+                    <option>PG</option>
+                    <option>10th/12th</option>
+                    <option>Below 10th</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="course" class="mb-2 block">Select Course</label>
+                <select id="Courses" class="w-full rounded border p-2">
+                    <option>AI/ML</option>
+                    <option>Web Developer</option>
+                    <option>Flutter Developer</option>
+                    <option>Android Developer</option>
+                    <option>IOS Developer</option>
+                    <option>Laravel Developer</option>
+                    <option>React Developer</option>
+                    <option>Full Stack Developer</option>
+                    <option>AI Developer</option>
+                    <option>QA Tester</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="birthday" class="mb-2 block">Birthday</label>
+                <input type="date" placeholder="Enter your Birthday" class="w-full rounded border p-2">
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <input type="checkbox">
+                <label for="terms" >Terms & Condition apply</label>
+            </div>
+            
+            <div class="FLEX items-center gap-3">
+                <button type="submit" class="rounded border px-5 py-2 text-black cursor-pointer">Submit</button>
+                <button type="reset" class="cursor-pointer rounded border px-5 p-2">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
