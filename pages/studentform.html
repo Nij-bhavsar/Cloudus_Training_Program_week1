@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="/images/logo.png">
     <title>Edunet - Online Learning Platform</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
-    <nav class="flex items-center justify-between bg-amber-200 px-6 py-3 text-black p-2.5">
-        <a href="../index.html" class="flex items-center">
-            <img src="../edunet.png" alt="Edunet logo" class="h-12 w-70 object-contain">
+    <nav class="flex items-center justify-between bg-white px-5 py-4 text-black p-2.5 sticky top-0 z-50 shadow-md">
+        <a href="/pages/home.html" class="flex items-center">
+            <img src="/images/edunet.png" alt="Edunet logo" class="h-12 w-70 object-contain">
             <!-- <a href="./home.html">Edunet - Online Learning Platform</a> -->
         </a>
         <div class="items-center space-x-6">
-            <a href="./home.html">Home</a>
-            <a href="./courselisting.html">Courses</a>
-            <a href="./coursedetail.html">Courses-Detail</a>
-            <a href="./studentform.html">Registration</a>
+            <a href="./home.html" class="hover:text-indigo-600">Home</a>
+            <a href="./courselisting.html" class="hover:text-indigo-600">Courses</a>
+            <a href="./studentform.html" class="hover:text-indigo-600">Registration</a>
+            <a href="./coursedetail.html" class="hover:text-indigo-600">About</a>
         </div>
             
         <div class="space-x-2 items-center">
-            <input type="text" placeholder="Search" class="bg-amber-300 px-4 py-2 rounded-2xl">
-            <button type="submit" class="cursor-pointer border border-gray-700 px-4 py-2 rounded-full">Search</button>
-            <button type="button" class="cursor-pointer border border-gray-700 px-4 py-2 rounded-full">Signup</button>
-            <button type="button" class="cursor-pointer border border-gray-700 px-4 py-2 rounded-full">Login</button>
+            <input type="text" placeholder="Search" class="bg-gray-300 px-4 py-2 rounded-full">
+            <button type="button" class="cursor-pointer bg-red-500 text-white px-4 py-2 rounded-full">Signup</button>
+            <button type="button" class="cursor-pointer px-4 py-2 rounded-full bg-sky-500 text-white">Login</button>
         </div>
     </nav>
-    <div class="flex justify-center items-center p-6">
-        <form class="mx-auto grid w-full max-w-3xl grid-cols-1 gap-5 rounded-lg bg-white p-8 shadow-md sm:grid-cols-2">
-            <h2 class="mb-4 text-center text-2xl font-bold">
+    <div class="flex p-6">
+        <form class="mx-auto grid w-full max-w-3xl grid-cols-2 gap-5 rounded-lg bg-white p-8 shadow-md sm:grid-cols-2">
+            <div class="col-span-2 text-center">
+                <h2 class="ml-15 mb-4 text-3xl font-bold justify-center-safe">
                 Student Registration
             </h2>
-
+            </div>
             <div>
                 <label for="name" class="mb-2 block">Name</label>
                 <input type="text" id="name" placeholder="Enter your full name" class="w-full rounded border p-2">
@@ -51,10 +52,19 @@
                 <label for="password" class="mb-2 block">Confirm Password</label>
                 <input type="password" placeholder="Enter your existing password" class="w-full rounded border p-2">
             </div>
+            <div>
+                <label for="birthday" class="mb-2 block">Birthday</label>
+                <input type="date" placeholder="Enter your Birthday" class="w-full rounded border p-2">
+            </div>
+            <div>
+                <label for="adharcard" class="mb-2 block">Aadharcard No.</label>
+                <input type="text" placeholder="Enter your Aadharcard no." class="w-full rounded border p-2">
+            </div>
             
             <div>
-                <label for="education" class="mb-2 block">Education Level</label>
+                <!-- <label for="education" class="mb-2 block">Education Level</label> -->
                 <select id="education" class="w-full rounded border p-2">
+                    <option selected disabled>Education Level</option>
                     <option>UG</option>
                     <option>PG</option>
                     <option>10th/12th</option>
@@ -63,9 +73,10 @@
             </div>
             
             <div>
-                <label for="course" class="mb-2 block">Select Course</label>
+                <!-- <label for="course" class="mb-2 block">Select Course</label> -->
                 <select id="Courses" class="w-full rounded border p-2">
-                    <option>AI/ML</option>
+                    <option value="" selected disabled> Select Course</option>
+                    <option>Angular Developer</option>
                     <option>Web Developer</option>
                     <option>Flutter Developer</option>
                     <option>Android Developer</option>
@@ -73,14 +84,9 @@
                     <option>Laravel Developer</option>
                     <option>React Developer</option>
                     <option>Full Stack Developer</option>
-                    <option>AI Developer</option>
+                    <option>Python Developer</option>
                     <option>QA Tester</option>
                 </select>
-            </div>
-            
-            <div>
-                <label for="birthday" class="mb-2 block">Birthday</label>
-                <input type="date" placeholder="Enter your Birthday" class="w-full rounded border p-2">
             </div>
             
             <div class="flex items-center ">
@@ -94,5 +100,10 @@
             </div>
         </form>
     </div>
+<footer class="bg-white text-center py-5 mt-12">
+    <p class="text-gray-400 text-sm">
+       © 2026 Edunet. All Rights Reserved.
+    </p>
+</footer>
 </body>
 </html>

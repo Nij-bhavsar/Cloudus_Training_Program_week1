@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <title>Angular Developer - Edunet</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <nav class="flex flex-col md:flex-row items-center justify-between bg-white px-5 py-4 sticky top-0 z-50 shadow-md gap-4">
+        <a href="./home.html">
+            <img src="/images/edunet.png" alt="Edunet Logo"
+                class="h-12 w-auto object-contain">
+        </a>
+        <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <a href="./home.html" class="hover:text-indigo-600">Home</a>
+            <a href="./courselisting.html" class="hover:text-indigo-600">Courses</a>
+            <a href="./studentform.html" class="hover:text-indigo-600">Registration</a>
+            <a href="./coursedetail.html" class="hover:text-indigo-600">About</a>
+        </div>
+        <div class="flex items-center gap-2">
+            <input type="text" placeholder="Search"
+                class="bg-gray-200 px-4 py-2 rounded-full w-28 sm:w-36">
+            <button class="bg-red-500 text-white px-4 py-2 rounded-full">
+                Signup
+            </button>
+            <button class="bg-sky-500 text-white px-4 py-2 rounded-full">
+                Login
+            </button>
+        </div>
+    </nav>
+    <main class="max-w-6xl mx-auto px-5 py-10">
+        <a href="./home.html"
+            class="text-indigo-600 font-semibold hover:underline">
+            ← Back to Courses
+        </a>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
+            <div>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
+                    Intermediate Level
+                </span>
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mt-5">
+                    Angular Developer
+                </h1>
+                <p class="text-gray-600 mt-4 leading-relaxed">
+                    Learn Angular from the basics to advanced concepts.
+                    Build modern, responsive and dynamic web applications
+                    using Angular and TypeScript.
+                </p>
+                <p class="text-sm text-gray-500 mt-5">
+                    👤 Instructor: Dr. Hope
+                </p>
+                <p class="mt-2">
+                    ⭐ 4.8 Rating (1.2k)
+                </p>
+                <div class="flex flex-wrap gap-5 mt-5 text-gray-700">
+                    <span>◷ 12 Weeks</span>
+                    <span>📚 30 Lessons</span>
+                    <span>🎓 Certificate</span>
+                </div>
+                <p class="text-3xl font-bold text-green-600 mt-6">
+                    ₹4,999
+                </p>
+                <a href="./studentform.html"
+                    class="inline-block bg-indigo-600 text-white px-7 py-3 rounded-lg mt-5 hover:bg-indigo-700">
+                    Enroll Now
+                </a>
+            </div>
+            <div class="bg-red-100 rounded-2xl h-64 md:h-80 flex items-center justify-center">
+                <i class="devicon-angularjs-plain colored text-9xl"></i>
+            </div>
+        </section>
+        <section class="bg-white rounded-xl shadow-sm p-6 md:p-8 mt-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-5">
+                What You Will Learn
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <p>✓ Angular Fundamentals</p>
+                <p>✓ TypeScript Basics</p>
+                <p>✓ Components and Templates</p>
+                <p>✓ Data Binding</p>
+                <p>✓ Angular Services</p>
+                <p>✓ Routing and Navigation</p>
+                <p>✓ Forms and Validation</p>
+                <p>✓ Building Angular Projects</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white text-center py-5 mt-12">
+        <p class="text-gray-400 text-sm">
+            © 2026 Edunet. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
